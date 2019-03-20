@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.card {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; 
+  margin: 20px;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 16px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #53d769;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+
+a{
+  color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .card-mid{
+  /* display:flex; */
+  text-align: center;
+  }
+
+  .card {    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="card-mid">
+  <div class="card">
+    <img src="./product-img/cv-122A.jpg" style="width:100%" height="123px">
+    <h2>CV-122A</h2>
+    <p class="price">影像訊號放大器</p>    
+    <p><button><a href="./product-pdf/CV-122A,122.pdf" style="text-decoration:none;">產品特色</a></button></p>
+  </div> 
+  
+  <div class="card">
+    <img src="./product-img/cv-122A.jpg" style="width:100%" height="123px">
+    <h2>CV-122</h2>
+    <p class="price">視頻分配器</p>    
+    <p><button><a href="./product-pdf/CV-122A,122.pdf" style="text-decoration:none;">產品特色</a></button></p>
+  </div>
+
+  <div class="card">
+    <img src="./product-img/CV-122D.jpg" style="width:100%" height="123px">
+    <h2>CV-122D</h2>
+    <p class="price">4CH視頻訊號分配器</p>    
+    <p><button><a href="./product-pdf/CV-122D.pdf" style="text-decoration:none;">產品特色</a></button></p>
+  </div>
+ 
+  <div class="card">
+    <img src="./product-img/CV-122D.jpg" style="width:100%" height="123px">
+    <h2>CV-122I</h2>
+    <p class="price">4:4影像訊號雜訊濾除器</p>    
+    <p><button><a href="./product-pdf/CV-122I.pdf" style="text-decoration:none;">產品特色</a></button></p>
+  </div>
+</div>
+</body>
+</html>

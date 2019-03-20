@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.product-container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.product-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.product-container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+	width: 80px;
+  height: 80px;
+}
+
+.product-container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .product-container {
+      text-align: center;
+  }
+  .product-container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="product-container">
+  <img src="../img/01.jpg" alt="Avatar"">
+  <p><span>產品一號</span> AHD攝影機一號</p>
+  <p>------描述產品資訊-------</p>
+</div>
+
+<div class="product-container">
+  <img src="../img/01.jpg" alt="Avatar"">
+  <p><span>產品二號</span> AHD攝影機二號</p>
+  <p>------描述產品資訊-------</p>
+</div>
+
+</body>
+</html>

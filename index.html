@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Com Video 傳影實業有限公司</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">            
+            <li class="nav-item ">
+                <a class="navbar-brand" href="./index.html"><span>Com Video <font size="2">傳影實業有限公司</font></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">首頁 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./company-intro.html">公司簡介 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./product-info.html">產品資訊 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html">聯絡我們 <span class="sr-only">(current)</span></a>
+            </li>          
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                介面語言
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Eng-version/index.html">英文</a>
+				<a class="dropdown-item" href="#">簡體中文</a>
+                <!-- <a class="dropdown-item" href="#">Another action</a> -->
+                <!-- <div class="dropdown-divider"></div> -->
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+	  
+	  <div class="text-home-page">
+		<h3>Com Video 傳影實業有限公司</h3>
+		<hr style="width:50%;">
+	  			<p> CCTV 監視系統專業製造 <br>
+				PLC、弱電系統規劃工程</br></p>
+	  </div>
+
+      <div class="container-fluid">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade-1">
+              <div class="numbertext">1 / 2</div>
+              <img id="inbox_img" src="./img/comvideo1.jpg">
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides fade-1">
+              <div class="numbertext">2 / 2</div>
+              <img id="inbox_img" src="./img/comvideo2.jpg">
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <!-- <div class="mySlides fade-1">
+              <div class="numbertext">3 / 3</div>
+              <img src="./img/01.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div> -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+            </div>
+        <br>
+        
+        <!-- <div class="text-home-page"> -->
+          <!-- <h3>Com Video 傳影實業有限公司</h3> -->
+          <!-- <!-- <hr style="width:50%;"> --> 
+					<!-- <!-- <p> Satisfying every expectation of our customers is always our goal<br> -->
+					<!-- OEM/ODM and special specifications are also welcome.<br></p> -->	
+		<!-- </div> -->
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    
+  </div>
+  <!-- /#wrapper -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/slide-show.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    function setURL(url){
+			document.getElementById('iframe').src = url;
+		}
+  </script>
+  
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+</body>
+
+</html>
