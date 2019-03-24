@@ -48,6 +48,46 @@ body{
   margin-left: 0;
 }
 
+/* Start of headers */
+#header_index {
+  background-color: #f1f1f1;
+  padding: 50px 10px;
+  color: #4CAF50;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+
+
+#header_company_revolution, #header_main_work, #header_bussinese_philosophy {
+  /* background-color: #f1f1f1; */
+  padding: 50px 10px;
+  color: #4CAF50;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  float:left;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+
+
+/* End of headers */
+
+
+
+#span_index{color: #f7f7f7;
+	background-color: #70797385;
+	font-family:微軟正黑體;
+	font-size: 20px;	
+	}
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
@@ -61,6 +101,9 @@ body{
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+  
+  
+  
 }
 
 /* --- start of home page slide show css ---*/
@@ -368,6 +411,10 @@ input[type=button]:hover {
 	/* this.style.width=(this.offsetWidth > 1000)?"00px":"auto"}); */
 	}
 	
+	#span_index{color: #f7f7f7;
+	background-color: #70797385;
+	font-family:微軟正黑體;		
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -505,6 +552,8 @@ input[type=button]:hover {
     /* myimg:expression(onload=function(){  */
     /* this.style.width=(this.offsetWidth > 1000)?"00px":"auto"}); */
     }
+	
+	
   
   .container-contact-box{
 	position:relative;
