@@ -11,6 +11,16 @@ body{
   overflow-x: hidden;
 }
 
+.li_coutainer{
+	display:inline-block;
+	margin:auto;
+}
+
+.li_coutainer > li{
+	/* float:left; */
+	text-align: left;
+}
+
 .text-home-page{
 	text-align:center;
 	line-height:50px;
@@ -54,7 +64,7 @@ body{
   padding: 50px 10px;
   color: #4CAF50;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   position: relative;
   top: 0;
@@ -68,7 +78,7 @@ body{
   padding: 50px 10px;
   color: #4CAF50;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   position: relative;
   float:left;
