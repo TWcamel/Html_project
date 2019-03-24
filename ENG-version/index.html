@@ -133,7 +133,7 @@
         <div id="header_main_work">Businese Items</div>
             <iframe id="iframe" src="./iframe_sample/main_work.html" width="100%" height="400px"  align="left" frameborder="0"></iframe>
         <div id="header_bussinese_philosophy">Management</div>
-            <iframe id="iframe" src="./iframe_sample/bussinese_philosophy.html" width="100%" height="200px"  align="left" frameborder="0"></iframe>
+            <iframe id="iframe" src="./iframe_sample/bussinese_philosophy.html" width="100%" height="700px"  align="left" frameborder="0"></iframe>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -162,31 +162,69 @@
 
   <!-- this is for headre -->
   <script>
+
+    if($(window).width() < 767)
+    {
+        // JavaScript here 
+        // 當視窗寬度小於767px時執行
+
+        // When the user scrolls down 50px from the top of the document, resize the header_company_revolution's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("header_index").style.fontSize = "30px";
+          } else {
+            document.getElementById("header_index").style.fontSize = "40px";
+          }
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 1000) {
+            document.getElementById("header_company_revolution").style.fontSize = "25px";
+          } else {
+            document.getElementById("header_company_revolution").style.fontSize = "40px";
+          }
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 1500) {
+            document.getElementById("header_main_work").style.fontSize = "25px";
+          } else {
+            document.getElementById("header_main_work").style.fontSize = "40px";
+          }
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 1800) {
+            document.getElementById("header_bussinese_philosophy").style.fontSize = "25px";
+          } else {
+            document.getElementById("header_bussinese_philosophy").style.fontSize = "40px";
+          }
+        }
+
+
+    } else {
+      
     // When the user scrolls down 50px from the top of the document, resize the header_company_revolution's font size
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("header_index").style.fontSize = "30px";
-      } else {
-        document.getElementById("header_index").style.fontSize = "40px";
-      }
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 600) {
-        document.getElementById("header_company_revolution").style.fontSize = "25px";
-      } else {
-        document.getElementById("header_company_revolution").style.fontSize = "40px";
-      }
-      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 650) {
-        document.getElementById("header_main_work").style.fontSize = "25px";
-      } else {
-        document.getElementById("header_main_work").style.fontSize = "40px";
-      }
-      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 900) {
-        document.getElementById("header_bussinese_philosophy").style.fontSize = "25px";
-      } else {
-        document.getElementById("header_bussinese_philosophy").style.fontSize = "40px";
-      }
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("header_index").style.fontSize = "30px";
+          } else {
+            document.getElementById("header_index").style.fontSize = "40px";
+          }
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 1050) {
+            document.getElementById("header_company_revolution").style.fontSize = "25px";
+          } else {
+            document.getElementById("header_company_revolution").style.fontSize = "40px";
+          }
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 1550) {
+            document.getElementById("header_main_work").style.fontSize = "25px";
+          } else {
+            document.getElementById("header_main_work").style.fontSize = "40px";
+          }
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 1805) {
+            document.getElementById("header_bussinese_philosophy").style.fontSize = "25px";
+          } else {
+            document.getElementById("header_bussinese_philosophy").style.fontSize = "40px";
+          }
+        }
+
     }
+    
             
   </script>
 
